@@ -81,6 +81,12 @@ local function MakeDraggable(topbarobject, object)
 	)
 end
 
+local f = game.Players.LocalPlayers.PlayersGui.Discord:WaitForCild()
+
+if f do
+	f:Destroy()
+end
+
 local Discord = Instance.new("ScreenGui")
 Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
